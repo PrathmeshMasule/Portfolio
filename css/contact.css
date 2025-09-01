@@ -1,0 +1,93 @@
+/* Contact Section */
+/* Contact Section */
+/* Contact Section */
+/* Contact Section */
+.contact {
+  text-align: center;
+  padding: 6rem 1rem 3rem; /* increased top padding (6rem instead of 3rem) */
+  background: #f9f9f9;
+}
+
+
+.contact h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  gap: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.contact-card {
+  background: #ffeb3b; /* yellow theme like navbar */
+  border-radius: 20px;
+  padding: 2rem 1rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.contact-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.25);
+}
+
+.contact-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.contact-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+.contact-card p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Go To Button */
+.contact-btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background: #111;
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.contact-btn:hover {
+  background: #333;
+}
+/* Navbar container spacing */
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem; /* Add left & right space so logo isn’t stuck */
+}
+
+/* Logo */
+#logo {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+#logo img {
+  max-height: 60px;
+  width: auto;
+  display: block;
+}
