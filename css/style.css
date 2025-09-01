@@ -165,7 +165,7 @@ body {
 
 .profile-image {
   width: 150px;
-  border-radius: 60%;
+  border-radius: 100%;
   animation: bounce 1s infinite alternate;
   margin-bottom: 2rem; /* Added space below the image */
 }
