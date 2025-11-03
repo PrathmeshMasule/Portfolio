@@ -1,4 +1,7 @@
-/* About Section */
+/* ============================
+   About Section Styles
+   ============================ */
+
 .about {
   padding: 6rem 2rem 4rem;
   text-align: center;
@@ -27,7 +30,9 @@
   border-radius: 3px;
 }
 
-/* Common Card Style (For Both Introduction and Career) */
+/* ============================
+   Card Styles (Common)
+   ============================ */
 .about-card {
   background: linear-gradient(135deg, #ffecd2, #fcb69f);
   padding: 2.5rem;
@@ -36,7 +41,7 @@
   color: #222;
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem; /* small gap between cards */
 }
 
 .about-card:hover {
@@ -44,7 +49,9 @@
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
 
-/* Headings inside cards */
+/* ============================
+   Headings & Text
+   ============================ */
 .about-card h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
@@ -52,7 +59,6 @@
   text-align: center;
 }
 
-/* Text styling */
 .about-card p {
   font-size: 1rem;
   line-height: 1.6;
@@ -60,7 +66,13 @@
   color: #222;
 }
 
-/* Career Goals List */
+/* ============================
+   Career Goals Section
+   ============================ */
+.career-card {
+  margin-top: 1.5rem; /* balanced gap for the second card */
+}
+
 .career-goals {
   list-style: none;
   padding: 0;
@@ -76,7 +88,9 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Button */
+/* ============================
+   Button Styles
+   ============================ */
 .about-btn {
   display: inline-block;
   margin-top: 1.5rem;
@@ -94,7 +108,9 @@
   transform: translateY(-2px);
 }
 
-/* Responsive Design */
+/* ============================
+   Responsive Design
+   ============================ */
 @media (max-width: 768px) {
   .about h1 {
     font-size: 2rem;
@@ -113,20 +129,3 @@
     font-size: 0.95rem;
   }
 }
-/* Common Card Style (For Both Introduction and Career) */
-.about-card {
-  background: linear-gradient(135deg, #ffecd2, #fcb69f);
-  padding: 2.5rem;
-  border-radius: 20px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-  color: #222;
-  text-align: left;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-bottom: 3rem; /* ⬅️ Increased spacing between cards */
-}
-
-/* Optional: add slight separation visually */
-.career-card {
-  margin-top: 3rem; /* ⬅️ Extra top gap for Career Goals card */
-}
-
