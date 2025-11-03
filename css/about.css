@@ -1,6 +1,6 @@
 /* About Section */
 .about {
-  padding: 6rem 2rem 4rem; /* added top padding to push content below navbar */
+  padding: 6rem 2rem 4rem;
   text-align: center;
   font-family: "Poppins", sans-serif;
 }
@@ -27,7 +27,7 @@
   border-radius: 3px;
 }
 
-/* About Card */
+/* Common Card Style (For Both Introduction and Career) */
 .about-card {
   background: linear-gradient(135deg, #ffecd2, #fcb69f);
   padding: 2.5rem;
@@ -36,6 +36,7 @@
   color: #222;
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 2rem;
 }
 
 .about-card:hover {
@@ -43,7 +44,7 @@
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
 
-/* Name */
+/* Headings inside cards */
 .about-card h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
@@ -51,7 +52,7 @@
   text-align: center;
 }
 
-/* Text */
+/* Text styling */
 .about-card p {
   font-size: 1rem;
   line-height: 1.6;
@@ -59,30 +60,7 @@
   color: #222;
 }
 
-/* Career Goals Card */
-.career-card {
-  background: linear-gradient(135deg, #cfd9df, #e2ebf0);
-  padding: 2.5rem;
-  border-radius: 20px;
-  margin-top: 2rem;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-  color: #222;
-  text-align: left;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.career-card:hover {
-  transform: translateY(-5px) scale(1.02);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-}
-
-.career-card h3 {
-  font-size: 1.8rem;
-  color: #111;
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
+/* Career Goals List */
 .career-goals {
   list-style: none;
   padding: 0;
@@ -92,7 +70,7 @@
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 1rem;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.7);
   padding: 1rem 1.2rem;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -122,13 +100,11 @@
     font-size: 2rem;
   }
 
-  .about-card,
-  .career-card {
+  .about-card {
     padding: 1.5rem;
   }
 
-  .about-card h2,
-  .career-card h3 {
+  .about-card h2 {
     font-size: 1.5rem;
   }
 
@@ -137,4 +113,3 @@
     font-size: 0.95rem;
   }
 }
-
