@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Projects</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/projects.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <!-- Logo -->
+      <h1 id="logo">
+        <a href="index.html">
+          <img src="./assets/logo.png" alt="Your Logo" />
+        </a>
+      </h1>
+
+      <!-- Navbar links -->
+      <ul class="nav-menu">
+        <li><a class="nav-link" href="index.html">HOME</a></li>
+        <li><a class="nav-link" href="about.html">ABOUT</a></li>
+        <li><a class="nav-link" href="projects.html">PROJECTS</a></li>
+        <li><a class="nav-link" href="achievements.html">ACHIEVEMENTS</a></li>
+        <li><a class="nav-link" href="academics.html">ACADEMICS</a></li>
+        <li><a class="nav-link" href="contact.html">CONTACT</a></li>
+        <li>
+          <a class="nav-link btn btn-primary" href="assets/MyResume.pdf">RESUME <i class="fas fa-arrow-right"></i></a>
+        </li>
+
+        <!-- Theme Toggle -->
+        <div class="theme-switch">
+          <input type="checkbox" id="switch" />
+          <label class="toggle-icons" for="switch">
+            <img class="moon" src="assets/moon.svg" />
+            <img class="sun" src="assets/sun.svg" />
+          </label>
+        </div>
+      </ul>
+
+      <!-- Hamburger Menu -->
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Projects Header -->
+  <header class="projects-header">
+    <h1>My Projects</h1>
+    <p>A showcase of my best work, from web development to creative designs.</p>
+  </header>
+
+  <!-- Projects Section -->
+  <section class="projects-section">
+    <div class="project-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="assets/project/library.png" alt="Library Management System">
+        <div class="card-body">
+          <h3>Library Management System</h3>
+          <p>A software to manage books, members, and transactions efficiently.</p>
+          <div class="card-links">
+            <a href="#" class="btn btn-primary">View</a>
+            <a href="https://github.com/PrathmeshMasule/LibraryManagement" target="_blank" class="btn btn-secondary">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="assets/project/spotify.png" alt="Spotify Clone">
+        <div class="card-body">
+          <h3>Spotify Clone</h3>
+          <p>A music streaming clone with playlists, search, and player features.</p>
+          <div class="card-links">
+            <a href="#" class="btn btn-primary">View</a>
+            <a href="https://github.com/PrathmeshMasule/SpotifyClone" target="_blank" class="btn btn-secondary">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <img src="assets/project/hotel.png" alt="SQL Hotel Management">
+        <div class="card-body">
+          <h3>SQL Hotel Management</h3>
+          <p>A database-driven system to manage bookings, rooms, and customers.</p>
+          <div class="card-links">
+            <a href="#" class="btn btn-primary">View</a>
+            <a href="https://github.com/PrathmeshMasule/SQLHotelManagement" target="_blank" class="btn btn-secondary">Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Modal -->
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDescription"></p>
+      <a id="modalGithub" href="#" target="_blank" class="btn btn-secondary">View Code on GitHub</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <a href="mailto:prathmeshmasule@gmail.com">prathmeshmasule@gmail.com</a>
+      <div class="social">
+        <a href="#" target="_blank"><img src="./assets/twitter-icon.svg" alt="Twitter" /></a>
+        <a href="https://www.linkedin.com/in/prathmesh-masule-402774290/" target="_blank"><img src="./assets/linkedin-icon.svg" alt="Linkedin" /></a>
+        <a href="https://github.com/PrathmeshMasule" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
+        <a href="#" target="_blank"><img src="./assets/hashnode-icon.svg" alt="Hashnode" /></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

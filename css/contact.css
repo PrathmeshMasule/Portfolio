@@ -1,0 +1,122 @@
+/* CONTACT SECTION */
+.contact {
+  text-align: center;
+  padding: 6rem 1rem 3rem;
+  background: var(--bg-color);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.contact h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+/* Container Grid */
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* CARD DESIGN */
+.contact-card {
+  background: var(--card-bg);
+  border-radius: 20px;
+  padding: 2rem 1rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  text-align: center;
+}
+
+.contact-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.25);
+}
+
+.contact-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--icon-color);
+}
+
+.contact-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--title-color);
+}
+
+.contact-card p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+}
+
+/* BUTTON */
+.contact-btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background: var(--btn-hover);
+}
+
+/* NAVBAR SPACING */
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+#logo img {
+  max-height: 60px;
+  width: auto;
+  display: block;
+}
+
+/* ===================================================
+   LIGHT MODE VARIABLES
+=================================================== */
+:root {
+  --bg-color: #f9f9f9;
+  --card-bg: #ffeb3b;
+  --text-color: #333;
+  --text-secondary: #444;
+  --title-color: #111;
+  --icon-color: #111;
+  --btn-bg: #111;
+  --btn-text: #fff;
+  --btn-hover: #333;
+}
+
+/* ===================================================
+   DARK MODE VARIABLES
+=================================================== */
+body.dark-mode {
+  --bg-color: #121212;
+  --card-bg: #1e1e1e;
+  --text-color: #f5f5f5;
+  --text-secondary: #ccc;
+  --title-color: #fff;
+  --icon-color: #ffeb3b;
+  --btn-bg: #ffeb3b;
+  --btn-text: #111;
+  --btn-hover: #fdd835;
+}

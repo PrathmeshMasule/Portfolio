@@ -1,0 +1,103 @@
+/* About Section */
+.about {
+  padding: 4rem 2rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #111;
+  position: relative;
+}
+
+.about h1::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 4px;
+  background: #111;
+  margin: 12px auto 0;
+  border-radius: 3px;
+}
+
+/* About Card */
+.about-card {
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  color: #222;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Name */
+.about-card h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #111;
+  text-align: center;
+}
+
+/* Text */
+.about-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+/* Button */
+.about-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 2rem;
+  background: #111;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.about-btn:hover {
+  background: #333;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about h1 {
+    font-size: 2rem;
+  }
+
+  .about-card {
+    padding: 1.5rem;
+  }
+
+  .about-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-card p {
+    font-size: 0.95rem;
+  }
+}
+/* About Section */
+.about {
+  padding: 6rem 2rem 4rem; /* added top padding to push content below navbar */
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}

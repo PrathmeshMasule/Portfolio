@@ -1,0 +1,163 @@
+/* ============================
+   Academics Page Styles
+   ============================ */
+
+/* Header */
+.academics-header {
+  margin-top: 7rem; /* navbar height */
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.academics-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.academics-header p {
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: gray;
+}
+
+/* Academic Cards Colors */
+.academic-card:nth-child(1) {
+  background: linear-gradient(135deg, #ffecd2, #fcb69f); /* soft orange */
+  color: #222;
+}
+
+.academic-card:nth-child(2) {
+  background: linear-gradient(135deg, #c3f5ff, #a1c4fd); /* soft blue */
+  color: #222;
+}
+
+.academic-card:nth-child(3) {
+  background: linear-gradient(135deg, #d4fc79, #96e6a1); /* soft green */
+  color: #222;
+}
+
+/* Academics Section */
+.academics-section {
+  max-width: var(--width-large);
+  margin: 3rem auto 5rem;
+  padding: 0 1.5rem;
+}
+
+/* Academic Card Grid */
+.academics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+/* Academic Card */
+.academic-card {
+  background: var(--card-background);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.academic-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+}
+
+.academic-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.academic-card p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .academics-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================
+   SGPA Table Styles
+   ============================ */
+
+.academic-table {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background: var(--card-background);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+.academic-table h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+.academic-table table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-variant-numeric: tabular-nums; /* ✅ Ensures numbers like 63 or 8.27 align perfectly */
+}
+
+.academic-table th,
+.academic-table td {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  font-variant-numeric: tabular-nums; /* ✅ Keeps all numbers aligned properly */
+}
+
+.academic-table th {
+  background: #ffd700; /* Yellow header */
+  color: #111;
+  font-weight: bold;
+}
+
+.academic-table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.academic-table tr:hover {
+  background: #fff5cc;
+}
+
+/* ============================
+   Navbar Container Spacing
+   ============================ */
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem; /* Keeps logo and menu evenly spaced */
+}
+
+/* Logo */
+#logo {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+#logo img {
+  max-height: 60px;
+  width: auto;
+  display: block;
+}
+.academic-table table,
+.academic-table th,
+.academic-table td {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum"; /* ensures tabular digits in supported fonts */
+  font-family: "Poppins", "Roboto Mono", monospace; /* ✅ fallback for perfect digit alignment */
+}

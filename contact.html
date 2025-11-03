@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+  <!-- CoreUI Icons for LeetCode -->
+  <link rel="stylesheet" href="https://unpkg.com/@coreui/icons/css/all.min.css" />
+</head>
+<body>
+   <nav class="navbar">
+        <div class="container">
+          <!-- Logo -->
+          <h1 id="logo">
+            <a href="index.html"><img src="./assets/logo.png" alt="Your Logo" /></a>
+          </h1>
+          <!-- Navbar links -->
+          <ul class="nav-menu">
+            <li><a class="nav-link" href="index.html">HOME</a></li>
+            <li><a class="nav-link" href="about.html">ABOUT</a></li>
+            <li><a class="nav-link" href="projects.html">PROJECTS</a></li>
+            <li><a class="nav-link" href="achievements.html">ACHIEVEMENTS</a></li>
+            <li><a class="nav-link" href="academics.html">ACADEMICS</a></li>
+            <li><a class="nav-link" href="contact.html">CONTACT</a></li>
+            <li>
+              <a class="nav-link btn btn-primary" href="assets/MyResume.pdf" target="_blank">
+                RESUME <i class="fas fa-arrow-right"></i>
+              </a>
+            </li>
+
+            <!-- Toggle switch -->
+            <div class="theme-switch">
+              <input type="checkbox" id="switch" />
+              <label class="toggle-icons" for="switch">
+                <img class="moon" src="assets/moon.svg" alt="Moon" />
+                <img class="sun" src="assets/sun.svg" alt="Sun" />
+              </label>
+            </div>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h1>Contact Me</h1>
+    <div class="contact-container">
+
+      <!-- LinkedIn Card -->
+      <div class="contact-card linkedin">
+        <i class="cib-linkedin"></i>
+        <h2>LinkedIn</h2>
+        <p>Connect with me professionally</p>
+        <a href="https://www.linkedin.com/in/prathmesh-masule-402774290/" target="_blank" class="contact-btn">Go To</a>
+      </div>
+
+      <!-- Gmail Card -->
+      <div class="contact-card gmail">
+        <i class="cib-gmail"></i>
+        <h2>Gmail</h2>
+        <p>Drop me an email</p>
+        <!-- FIX: Add "mailto:" -->
+        <a href="mailto:prathmeshmasule@gmail.com" class="contact-btn">Go To</a>
+      </div>
+
+      <!-- LeetCode Card -->
+      <div class="contact-card leetcode">
+        <i class="cib-leetcode contact-icon"></i>
+        <h2>LeetCode</h2>
+        <p>Check out my coding profile</p>
+        <a href="https://leetcode.com/u/PrathmeshMasule/" target="_blank" class="contact-btn">Go To</a>
+      </div>
+      
+      <!-- GitHub Card -->
+      <div class="contact-card github">
+        <i class="cib-github contact-icon"></i>
+        <h2>GitHub</h2>
+        <p>Explore my projects and repositories</p>
+        <a href="https://github.com/PrathmeshMasule" target="_blank" class="contact-btn">Go To</a>
+      </div>
+
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <!-- FIX: Added "mailto:" and corrected email -->
+      <a href="mailto:prathmeshmasule@gmail.com">prathmeshmasule@gmail.com</a>
+      <div class="social">
+        <a href="#" target="_blank"><img src="./assets/twitter-icon.svg" alt="Twitter" /></a>
+        <a href="https://www.linkedin.com/in/prathmesh-masule-402774290/" target="_blank">
+          <img src="./assets/linkedin-icon.svg" alt="Linkedin" />
+        </a>
+        <a href="https://github.com/PrathmeshMasule" target="_blank">
+          <img src="./assets/github-icon.svg" alt="GitHub" />
+        </a>
+        <a href="#" target="_blank">
+          <img src="./assets/hashnode-icon.svg" alt="Hashnode" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Dark Mode Script -->
+  <script>
+    const toggleSwitch = document.querySelector("#switch");
+    const body = document.body;
+
+    // Load saved theme
+    if (localStorage.getItem("theme") === "dark") {
+      body.classList.add("dark-mode");
+      toggleSwitch.checked = true;
+    }
+
+    // Toggle theme
+    toggleSwitch.addEventListener("change", () => {
+      if (toggleSwitch.checked) {
+        body.classList.add("dark-mode");
+        localStorage.setItem("theme", "dark");
+      } else {
+        body.classList.remove("dark-mode");
+        localStorage.setItem("theme", "light");
+      }
+    });
+  </script>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
