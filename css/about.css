@@ -113,3 +113,20 @@
     font-size: 0.95rem;
   }
 }
+/* Common Card Style (For Both Introduction and Career) */
+.about-card {
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  color: #222;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 3rem; /* ⬅️ Increased spacing between cards */
+}
+
+/* Optional: add slight separation visually */
+.career-card {
+  margin-top: 3rem; /* ⬅️ Extra top gap for Career Goals card */
+}
+
