@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Achievements</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/achievements.css"> <!-- extra CSS for this page -->
+</head>
+<body>
+  <!-- Navbar -->
+ <nav class="navbar">
+        <div class="container">
+          <!-- Logo -->
+          <h1 id="logo">
+            <a href="https://github.com/CommunityPro/portfolio-html"
+              ><img src="./assets/logo.png" alt="Your Logo"
+            /></a>
+          </h1>
+          <!-- Navbar links -->
+          <ul class="nav-menu">
+            <li><a class="nav-link" href="index.html">HOME</a></li>
+             <li><a class="nav-link" href="about.html">ABOUT</a></li>
+        <li><a class="nav-link" href="projects.html">PROJECTS</a></li>
+        <li><a class="nav-link" href="achievements.html">ACHIEVEMENTS</a></li>
+        <li><a class="nav-link" href="academics.html">ACADEMICS</a></li>
+       
+        <li><a class="nav-link" href="contact.html">CONTACT</a></li>
+            <li>
+              <a
+                class="nav-link btn btn-primary"
+                href="assets/MyResume.pdf"
+                >RESUME <i class="fas fa-arrow-right"></i
+              ></a>
+            </li>
+
+            <!-- Toggle switch -->
+            <div class="theme-switch">
+              <input type="checkbox" id="switch" />
+              <label class="toggle-icons" for="switch">
+                <img class="moon" src="assets/moon.svg" />
+                <img class="sun" src="assets/sun.svg" />
+              </label>
+            </div>
+            <!-- Hamburger menu -->
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+
+
+  <!-- Achievements Section -->
+  <section class="achievements">
+    <h1>My Achievements</h1>
+    
+   <div class="card-container">
+
+  <!-- Certificate 1 -->
+  <div class="card">
+    <h2>Fundamental Of DSA</h2>
+    <p>Issued by Geeksforgeeks</p>
+    <button class="details-btn" onclick="toggleDetails(this)">Details</button>
+    <div class="details">
+      <p><b>Course:</b> 3 weeks course of DSA</p>
+      <p><b>Date:</b> January 2025</p>
+      <p><b>Description:</b> Completed a <b>3-week DSA course</b> with 50+ problems, focusing on problem-solving strategies in C++.</p>
+      <!-- PDF or Image button -->
+      <a href="assets/certifications/geekforgeeks.pdf" target="_blank" class="pdf-btn">View Certificate</a>
+    </div>
+  </div>
+
+  <!-- Certificate 2 -->
+  <div class="card">
+    <h2>C++ Training Certificate</h2>
+    <p>Issued by IIT Bombay</p>
+    <button class="details-btn" onclick="toggleDetails(this)">Details</button>
+    <div class="details">
+      <p><b>Course:</b> Data Structures & Algorithms</p>
+      <p><b>Date:</b> March 2025</p>
+      <p><b>Description:</b> Completed **C++ training** with quizzes and practical learning, gaining strong programming fundamentals.
+.</p>
+      <!-- PDF button -->
+      <a href="assets/certifications/cpp.pdf" target="_blank" class="pdf-btn">View Certificate</a>
+    </div>
+  </div>
+
+  <!-- Certificate 3 -->
+  <div class="card">
+    <h2>DSA Course Certificate</h2>
+    <p>Issued by Scaler</p>
+    <button class="details-btn" onclick="toggleDetails(this)">Details</button>
+    <div class="details">
+      <p><b>Course:</b> Data Structures & Algorithms</p>
+      <p><b>Date:</b> April 2025</p>
+      <p><b>Description:</b> Completed advanced DSA training covering arrays, recursion, trees, graphs, and dynamic programming.</p>
+      <!-- Image button -->
+      <a href="assets/certifications/DSA course.jpeg" target="_blank" class="pdf-btn">View Certificate</a>
+    </div>
+  </div>
+  <!-- Certificate 4 -->
+<div class="card">
+  <h2>Yoga Certificate</h2>
+  <p>Issued by Yoga Institute</p>
+  <button class="details-btn" onclick="toggleDetails(this)">Details</button>
+  <div class="details">
+    <p><b>Course:</b> Yoga & Wellness Training</p>
+    <p><b>Date:</b> May 2025</p>
+    <p><b>Description:</b> Successfully completed yoga training, improving flexibility, breathing, and mental wellness.</p>
+    <!-- Image button -->
+    <a href="assets/certifications/yoga.jpeg" target="_blank" class="pdf-btn">View Certificate</a>
+  </div>
+</div>
+<!-- certificate 4 -->
+<div class="card">
+  <h2>Chess Competition</h2>
+  <p>College Level Event</p>
+  <button class="details-btn" onclick="toggleDetails(this)">Details</button>
+  <div class="details">
+    <p><b>Event:</b> Gandharva Chess Competition</p>
+    <p><b>Date:</b> March 2025</p>
+    <p><b>Description:</b> Participated in and received recognition in the college chess competition.</p>
+    <a href="assets/certifications/chess.jpeg" target="_blank" class="pdf-btn">View Certificate</a>
+  </div>
+</div>
+
+</div>
+
+
+
+
+    </div>
+  </section>
+  
+    <footer id="footer">
+      <div class="container">
+        <a href="prathmeshmasule@gmail.com">prathmehmasule@gmail.com</a>
+        <!-- Social links -->
+        <div class="social">
+         
+          <a href="#" target="_blank"><img src="./assets/twitter-icon.svg" alt="Twitter" /></a>
+          <a href="https://www.linkedin.com/in/prathmesh-masule-402774290/" target="_blank"
+            ><img src="./assets/linkedin-icon.svg" alt="Linkedin"
+          /></a>
+          <a href="https://github.com/PrathmeshMasule" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
+          <a href="#" target="_blank"
+            ><img src="./assets/hashnode-icon.svg" alt="Hashnode"
+          /></a>
+       
+     
+    </footer>
+  <script>
+    function toggleDetails(button) {
+      const details = button.nextElementSibling;
+      if (details.style.display === "block") {
+        details.style.display = "none";
+        button.textContent = "Details";
+      } else {
+        details.style.display = "block";
+        button.textContent = "Hide Details";
+      }
+    }
+    
+  </script>
+   <script src="js/script.js"></script>
+</body>
+</html>
